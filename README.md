@@ -8,7 +8,7 @@ A project to practice and improve knowledge in HTML and CSS without the use of f
 <ul>
 <li> access the page <a href="https://lucavini.github.io/JobFinder/">here</a> </li></ul>
 
-
+### Screenshots
 <img src="img/screenshots/screenshot1.png">
 <img src="img/screenshots/screenshot2.png">
 <img src="img/screenshots/screenshot3.png">
@@ -16,5 +16,7 @@ A project to practice and improve knowledge in HTML and CSS without the use of f
 <img src="img/screenshots/screenshot5.png">
 <img src="img/screenshots/screenshot6.png">
 <img src="img/screenshots/screenshot7.png">
+
+### Mobile Screenshots
 
 <p> <img src="img/screenshots/screenshot_mobile1.PNG"> <img src="img/screenshots/screenshot_mobile2.PNG"></p>
