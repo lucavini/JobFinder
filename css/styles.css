@@ -1,0 +1,810 @@
+/*RESET*/
+*{
+    font-family:'Open Sans', sans-serif;
+    margin: 0;
+    color:#666;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container{
+    max-width:1920px;
+    width: 100%;
+}
+
+/*CABEÇALHO*/
+header{
+    position:relative;
+    top:0;
+    width: 100%;
+    height:auto;
+}
+
+.nav-container .btn-menumobile{
+    display: none;
+}
+
+nav{
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+nav::after{
+    clear: both;
+    content:"";
+    display: block;
+}
+
+.nav-container{
+    max-width: 1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo{
+    width:50px;
+    height:50px;
+    margin-top: 25px;
+}
+
+.nav-container ul{
+    float:right;
+    height: 100px;
+    line-height:100px;
+    margin:0;
+}
+
+.nav-container ul li{
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container ul li a:hover{
+    color: #3381F3;
+    transition: 0.5s;
+}
+
+/*BANNER*/
+#main-banner{
+    background: url("../img/banner6.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: 0 10%;
+    position: relative;
+    margin-top:100px; 
+    
+}
+
+#search-form{
+    position: relative;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15em 0;
+    text-align: center;
+    
+}
+
+#search-form h1{
+    font-size: 40px;
+}
+
+#search-form p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+#search-form input, #search-form select{
+    background-color: #fff;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 1%;
+    width: 20%;
+}
+
+#search-form input[type=submit]{
+    background-color: #3381F3;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+#search-form input[type=submit]:hover{
+    background-color: #2b79eb;
+    transition: 0.5s;
+}
+
+/*ÚLTIMAS VAGAS*/
+#lastjob-container{
+    text-align: center;
+    padding: 100px 0;
+}
+
+.wrapper{
+    max-width:1200px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lastjob-container h1{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#lastjob-container ul{
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#lastjob-container ul li{
+    text-align: left;
+    border-bottom: solid 1px #ccc;
+    height: 80px;
+    position: relative;
+}
+
+#lastjob-container ul li:last-child{
+    border-bottom: none;
+}
+
+.clickarea{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#lastjob-container ul li a:hover{
+    background-color: rgba(230, 230, 230, 0.9);
+    transition: 0.3s;
+}
+
+.company-box{
+    display: inline-block;
+    width: 50%;
+    position: relative;
+    padding:2% 1%;
+}
+
+.company-box img{
+    width: 100px;
+    margin-top: 2.5px;
+}
+
+.company-info{
+    display: inline-block;
+    margin-left: 50px;
+    text-align: left;
+    position: absolute; 
+}
+
+.company-info h3{
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.company-info p{
+    font-weight: bold;
+}
+
+.locality{
+    color: #6d6d6d;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    line-height: 80px;
+}
+
+.locality i, .locality p{
+    display: inline-block;
+}
+
+.locality i{
+    margin-right: 5px;
+}
+
+.job-type{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-top: 30px;
+    right: 1%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.job-type span{
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.clt{
+    background-color: #735fee;
+}
+
+.pj{
+    background-color: #5bbc2e;
+}
+
+.homeoffice{
+    background-color: #ff5a5f;
+}
+
+.btnjobs-container{
+    margin-top: 50px;
+}
+
+.btn-jobs{
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #3381f3;
+    border: 2px solid #3381f3;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.btn-jobs:hover{
+    background-color: #3381f3;
+    color:#fff;
+    transition: 0.3s;
+}
+
+/*BANNER ENVIAR VAGAS*/
+#sendjobs-container{
+    background: url("../img/banner2.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: cover;
+    padding: 15em 0;
+}
+
+#sendjobs-container h2, #sendjobs-container p{
+    width: 600px;
+    color: #fff;
+}
+
+#sendjobs-container h2{
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+#sendjobs-container p{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.light-btn{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color:#666;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.light-btn:hover{
+    background-color: transparent;
+    color: #fff;
+    transition: 0.5s;
+}
+
+
+/*JOB STATUS*/
+#status-container{
+    text-align: center;
+    padding: 5em 0;
+}
+
+.title-center{
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.p-center{
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.status-box{
+    display: inline-block;
+    text-align: center;
+    width: 24.5%;
+    margin-top: 80px;
+    border-left:1px solid #ddd ;
+    border-right:1px solid #ddd ;
+    height: 100px;
+}
+
+.status-box:nth-child(2){
+    border: none;
+}
+
+.status-box:nth-child(3){
+    border-right: none;
+}
+
+.status-qtd{
+    font-size: 36px;
+}
+
+.status-text{
+    font-size:20px;
+}
+
+
+/*TESTEMUNHOS*/
+#testmony-container{
+    background: url("../img/banner7.jpg") no-repeat fixed;
+    background-size: cover;
+    padding: 10em 0;
+}
+
+#testmony-container h2, #testmony-container p{
+    color: #fff;
+    text-align: center;
+}
+
+#testmony-container h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+#testmony-container p{
+    margin-bottom: 50px;
+}
+
+.testmony-box{
+    display: inline-block;
+    width: 24.5%;
+    text-align: center;
+}
+
+#testmony-container .testmony-box .testmony-msg{
+    background-color: #fff;
+    color:#666;
+    border-radius: 10px;
+    padding: 20px 0;
+    width: 50%;
+    position: relative;
+    margin: 35px auto;
+    font-style: italic;
+}
+
+.testmony-msg:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.testmony-box img{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.testmony-name{
+    font-weight: bold;
+}
+
+#blog-container{
+    text-align: center;
+    padding: 5em 0;
+}
+
+#blog-container .p-center{
+    margin-bottom: 60px;
+}
+
+.article-box{
+    display: inline-block;
+    width: 31%;
+    padding: 0 1%;
+    text-align: left;
+}
+
+.article-box img{
+    width: 100%;
+    border-radius: 5px;
+    border-bottom: 10px;
+}
+
+.article-box h4{
+    font-size: 24px;
+    margin-bottom:15px;
+}
+
+.article-date{
+    font-size: 12px;
+    margin-bottom: 15px;   
+}
+
+.article-resume{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.article-btn{
+    background-color: #3381F3;
+    border: 2px solid #3381F3;
+    color: #fff;
+}
+
+.article-btn:hover{
+    background-color: #fff;
+    
+    color:#3381F3;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #666;
+    padding-top: 5em;
+    padding-bottom: 40px;
+    border-top: 5px solid #3381F3;
+}
+footer h2, footer p, footer a, footer span{
+    color: #d1d1d1;
+}
+footer h2{ font-weight: 400;}
+footer ul{ padding: 0}
+
+.footer-box{
+    width: 31%;
+    padding: 1%;
+    float: left;
+}
+
+footer .wrapper:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.company-footer{
+    width: 80%;
+}
+
+.company-footer h2{
+    margin-top: 20px;
+}
+
+.company-footer h2, .company-footer p{
+    margin-bottom: 20px;
+}
+
+.footer-list li{
+    margin-top: 15px;
+}
+
+.footer-list a:hover{
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer-list a:after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.article-footer{
+    width: 80%;
+}
+
+.footer-list.footer-article-list span{
+    display: block;
+    float: none;
+}
+
+.fab{
+    font-size: 30px;
+    margin-right: 10px;
+    float: left;
+    color: #d1d1d1;
+}
+
+.footer-list li span{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.footer-bottom{
+    border-top:1px solid #b2b2b2 ;
+}
+
+.footer-bottom p{
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width: 1024px){
+    #logo{
+        position: absolute;
+        left: 50px;
+    }
+
+    .nav-container ul{
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-container ul li{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    #search-form{
+        padding-top: 25em;
+        padding-bottom: 5em;
+    }
+
+    #search-form form{
+        width: 60%;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #search-form form input, #search-form form select{
+        display: block;
+        margin: 0;
+        margin-bottom: 25px;
+        width: 100%;
+        border-width: 0px;
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }
+
+    #lastjobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper{
+        max-width: 90%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    #lastjobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper{
+        max-width: 90%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .company-box{
+        width: 46%;
+        padding-left: 1em; 
+    }
+
+    .company-box .company-info h3{
+        font-size: 1em;
+    }
+
+    .company-box .company-info p, .locality i, .locality p, .job-type span{
+        font-size: .8em;
+    }
+    
+    .job-type{
+        right: 1em;
+    }
+
+    #sendjobs-inner h2, #sendjobs-inner p{
+        text-shadow: .5px .5px #000;
+    }
+
+    .status-box{
+        width: 49.4%;
+        border:none;
+    }
+
+    .status-box:nth-child(1), .status-box:nth-child(3){
+        border-right: 1px solid #ccc;
+    }
+
+    .testmony-box{
+        width: 49.4%;
+    }
+
+    .article-box{
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 3em;
+
+    }
+
+}
+
+@media screen and (max-width: 576px){
+
+    #lastjobs-container.wrapper, #status-container.wrapper, #blog-container.wrapper, .wrapper{
+        max-width: 90%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .nav-container .btn-menumobile{
+        display: block !important;
+    }
+
+    html, body{
+        overflow-x: hidden;
+    }
+
+    nav{
+        height: 4em;
+    }
+
+    #main-banner{
+        margin-top: 0;
+    }
+
+    #logo{
+        left: 2em;
+        height: 2em;
+        width: 2em;
+        margin-top: 1em;
+    }
+
+    .btn-menumobile{
+        display: block;
+        font-size: 1.75em;
+        color: #ccc;
+        position: absolute;
+        right: 1.5em;
+        top: .75em;
+    }
+
+    .nav-container ul{
+        position: relative;
+        top: 4em;
+        height: 3em;
+        line-height: 3em;
+        display: none;
+    }
+
+    .nav-container ul li{
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav-container ul li a{
+        font-size: 1em;
+    }
+
+    #search-form{
+        padding-top: 15em;
+        padding-bottom: 5em;
+        width: 90%;
+    }
+    
+    #search-form form{
+        width: 80%;
+    }
+    
+    #search-form h1{
+        font-size: 1.6em;
+    }
+
+    #search-form p{
+        font-size: 1em;
+        margin-bottom: 2em;
+    }
+
+    #search-form input[type=submit]{
+        margin-bottom: 0;
+
+    }
+
+    #last-jobs-container{
+        padding: 5em 0;
+    }
+
+    .locality{
+        display: none;
+    }
+
+    .company-box img{
+        margin-top: 1em;
+    }
+
+    .company-box .company-info{
+        margin-top: 1em;
+        margin-left: 1em;
+        width: 8em;
+    }
+
+    .company-box .company-info h3{
+        font-size: .8em;
+    }
+
+    .job-type{
+        width: 22%;
+    }
+
+    #sendjobs-container{
+        background-position: 35% 0;
+        padding: 10em 0;
+    }
+
+    #sendjobs-container h2{
+        font-size: 1.5em;
+        width: 100%;
+    }
+
+    #sendjobs-container p{
+        font-size: 1em;
+        width: 100%;
+    }
+
+    .status-box{
+        margin-top: 3em;
+        width: 100%;
+    }
+
+    .status-box:nth-child(1), .status-box:nth-child(3){
+        border: none;
+    } 
+
+    #testmony-container{
+        padding: 5em 0;
+    }
+
+    .testmony-box{
+        width: 100%;
+    }
+
+    #testmony-container p{
+        margin-bottom: 1em;
+    }
+
+    .footer-box{
+        display: block;
+        width: 100%;
+    }
+
+    
+
+
+}
